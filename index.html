@@ -3,18 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
+    <title>Login Page</title>
     <style>
-        .contact-form {
-            max-width: 400px;
+        /* Basic styling for the login form - can be expanded for aesthetic purposes */
+        form {
+            max-width: 300px;
             margin: 0 auto;
             padding: 20px;
-            border: 1px solid #ddd;
+            border: 1px solid #ccc;
             border-radius: 5px;
+            background-color: #f9f9f9;
         }
-        
-        .contact-form input[type="text"], 
-        .contact-form textarea {
+        input[type="text"],
+        input[type="password"],
+        input[type="email"] {
             width: 100%;
             padding: 10px;
             margin: 8px 0;
@@ -23,8 +25,7 @@
             border-radius: 4px;
             box-sizing: border-box;
         }
-        
-        .contact-form input[type="submit"] {
+        button {
             background-color: #4CAF50;
             color: white;
             padding: 14px 20px;
@@ -34,21 +35,36 @@
             cursor: pointer;
             width: 100%;
         }
-        
-        .contact-form input[type="submit"]:hover {
+        button:hover {
             background-color: #45a049;
         }
     </style>
 </head>
 <body>
-    <h1>Contact Us</h1>
-    <div class="contact-form">
-        <form action="/submit_contact_form" method="post">
-            <input type="text" id="fname" name="firstname" placeholder="Your name">
-            <input type="text" id="email" name="email" placeholder="Your email">
-            <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
-            <input type="submit" value="Submit">
-        </form>
-    </div>
+    <h2>Login Page</h2>
+    <form action="storage/emulated/0/2Coding.html/Frontpage.html" method="post">
+        <div>
+            <label for="username">Username or Email:</label>
+            <input type="text" id="username" name="username" required>
+        </div>
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+        <div>
+            <button type="submit">Login</button>
+        </div>
+    </form>
+    <p><a href="content://com.mi.android.globalFileexplorer.myprovider/external_files/2Coding.html/forget.html">Forgot your password?</a></p>
+    <p >Don't have an account?<a href="content://com.mi.android.globalFileexplorer.myprovider/external_files/2Coding.html/register.html"><font color="#55acffe0">Sign up!</font></a></p>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
